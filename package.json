@@ -1,0 +1,30 @@
+{
+  "name": "gulp-qiniu-cdn",
+  "version": "1.0.0",
+  "description": "gulp plugin for qiniu to upload file stream.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesvods/gulp-qiniu-cdn"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "qiniu",
+    "cdn",
+    "upload"
+  ],
+  "author": {
+    "name": "Jogis",
+    "email": "zenjayjay@gmail.com",
+    "url": "https://github.com/yesvods"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "qiniu": "^6.1.7",
+    "through2": "^0.6.5"
+  }
+}
