@@ -22,7 +22,7 @@ var gulp = require('gulp'),
 gulp.task('qiniu', function () {
     return gulp.src(['app/**/*.css','app/**/*.js'])
         .pipe(qiniuCDN({
-          AK: Your ACCESS_KEY,
+            AK: Your ACCESS_KEY,
             SK: Your SECRET_KEY,
             scope: bucketname
         }))
