@@ -33,8 +33,8 @@ Optional configurations are available.For more detail about configuation ,see [o
 
 ```
 {
-  scope,
-  callbackUrl,
+    scope,
+    callbackUrl,
     callbackBody,
     returnUrl,
     returnBody,

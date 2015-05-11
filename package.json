@@ -1,6 +1,6 @@
 {
   "name": "gulp-qiniu-cdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gulp plugin for qiniu to upload file stream.",
   "main": "index.js",
   "scripts": {
