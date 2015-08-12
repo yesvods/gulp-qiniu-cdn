@@ -1,5 +1,6 @@
 var through = require('through2');
 var qiniu = require('qiniu');
+var p = require('path');
 
 // consts
 const PLUGIN_NAME = 'gulp-qiniu-cdn';
@@ -42,9 +43,8 @@ function gulpQiniuCdn(conf) {
 
   // creating a stream through which each file will pass
   var stream = through.obj(function(file, enc, cb) {
-    var path = file.history[0];
-    var fileName = path.split("/").pop();
-
+    var path = file.path;
+    var fileName = p.basename(path);
     var extra = new qiniu.io.PutExtra(params, mimeType, crc32, checkCrc);
     qiniu.io.putFile(uptokenStr, fileName, path, extra, function(err, ret){
       if(!err) {
